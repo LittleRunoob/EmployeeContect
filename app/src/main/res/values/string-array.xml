@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>工程师</item>
+        <item>人力资源</item>
+        <item>市场营销</item>
+        <item>财务会计</item>
+        <item>行政</item>
+        <item>高管</item>
+    </string-array>
+</resources>

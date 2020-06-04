@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:layout_alignParentRight="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改员工信息"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="电话"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+        android:drawablePadding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="姓名"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+        android:drawablePadding="5dp"
+        android:layout_below="@id/et_phone"
+        android:layout_marginTop="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/check_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"/>
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:layout_marginLeft="15dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择部门："
+        android:textSize="16sp"
+        android:layout_below="@id/check_group"
+        android:layout_marginTop="10dp"/>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_position"
+        android:layout_marginTop="10dp"
+        android:entries="@array/spingarr"/>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="增加"
+        android:textSize="16sp"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/btn_add"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修改"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/btn_delete"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>
